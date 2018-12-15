@@ -17,5 +17,10 @@
         marker_height_min: 3,
         timenav_position: top,
     }
-    timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1mNm1Ec-bvGOuBZgOuwFM-tz9WM67MP_1VKuCnVSEKPs/pubhtml', additionalOptions);
+    var timeline_json = make_the_json(); // replace make_the_json() with the JSON object you created
+    // two arguments: the id of the Timeline container (no '#')
+    // and the JSON object or an instance of TL.TimelineConfig created from
+    // a suitable JSON object
+    window.timeline = new TL.Timeline('timeline-embed', timeline_json);
+    //timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1mNm1Ec-bvGOuBZgOuwFM-tz9WM67MP_1VKuCnVSEKPs/pubhtml', additionalOptions);
 </script>
