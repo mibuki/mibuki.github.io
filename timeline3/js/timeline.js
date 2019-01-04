@@ -13461,8 +13461,8 @@ TL.Timeline = TL.Class.extend({
 		}
 
 		// Set StorySlider Height
-		this.options.storyslider_height = (this.options.height - this.options.timenav_height)/3;
-
+		//this.options.storyslider_height = (this.options.height - this.options.timenav_height);
+		this.options.storyslider_height = 100;
 		// Positon Menu
 		if (this.options.timenav_position == "top") {
 			menu_position = ( Math.ceil(this.options.timenav_height)/2 ) - (this._el.menubar.offsetHeight/2) - (39/2) ;
