@@ -10604,9 +10604,9 @@ TL.StorySlider = TL.Class.extend({
 		}
 
 		if (height) {
-			this.options.height = height/100;
+			this.options.height = height;
 		} else {
-			this.options.height = this._el.container.offsetHeight/100;
+			this.options.height = this._el.container.offsetHeight;
 		}
 
 		//this._el.container.style.height = this.options.height;
