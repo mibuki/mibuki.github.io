@@ -10656,7 +10656,7 @@ TL.StorySlider = TL.Class.extend({
 
 		// Update Size
 		this.options.width = this._el.container.offsetWidth;
-		this.options.height = this._el.container.offsetHeight;
+		this.options.height = this._el.container.offsetHeight/200;
 
 		// Create Navigation
 		this._nav.previous = new TL.SlideNav({title: "Previous", description: "description"}, {direction:"previous"});
