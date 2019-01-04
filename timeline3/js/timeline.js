@@ -10300,7 +10300,7 @@ TL.StorySlider = TL.Class.extend({
 		this.options = {
 			id: 					"",
 			layout: 				"portrait",
-			width: 					600,
+			width: 					200,
 			height: 				600,
 			default_bg_color: 		{r:255, g:255, b:255},
 			slide_padding_lr: 		40, 			// padding on slide of slide
