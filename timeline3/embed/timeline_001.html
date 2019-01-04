@@ -33,6 +33,11 @@ html, body {
 <div id='timeline-embed' style="width: 100%; height: 2000"></div>
 <!-- 3 -->
 <script type="text/javascript">
+$(function(){
+    var h = $('html').height();
+    // 親におくる。第2引数は親のドメインを指定
+    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
+});
     var additionalOptions = {
         start_at_end: false,
         default_bg_color: {
@@ -52,13 +57,6 @@ html, body {
     // a suitable JSON object
     //window.timeline = new TL.Timeline('timeline-embed', timeline_json);
     timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/1mNm1Ec-bvGOuBZgOuwFM-tz9WM67MP_1VKuCnVSEKPs/pubhtml', additionalOptions);
-</script>
-<script>
-$(function(){
-    var h = $('html').height();
-    // 親におくる。第2引数は親のドメインを指定
-    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
-});
 </script>
 </body>
 </html>
