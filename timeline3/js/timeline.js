@@ -13659,9 +13659,9 @@ TL.Timeline = TL.Class.extend({
 
 		// LAYOUT
 		if (this.options.layout == "portrait") {
-			this.options.storyslider_height = (this.options.height - this.options.timenav_height - 1);
+			this.options.storyslider_height = (this.options.height - this.options.timenav_height - 1)/3;
 		} else {
-			this.options.storyslider_height = (this.options.height - 1);
+			this.options.storyslider_height = (this.options.height - 1)/3;
 		}
 
 
