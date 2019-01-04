@@ -10300,7 +10300,7 @@ TL.StorySlider = TL.Class.extend({
 		this.options = {
 			id: 					"",
 			layout: 				"portrait",
-			width: 					200,
+			width: 					600,
 			height: 				600,
 			default_bg_color: 		{r:255, g:255, b:255},
 			slide_padding_lr: 		40, 			// padding on slide of slide
@@ -10604,9 +10604,9 @@ TL.StorySlider = TL.Class.extend({
 		}
 
 		if (height) {
-			this.options.height = height;
+			this.options.height = height/100;
 		} else {
-			this.options.height = this._el.container.offsetHeight;
+			this.options.height = this._el.container.offsetHeight/100;
 		}
 
 		//this._el.container.style.height = this.options.height;
