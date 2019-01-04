@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-＜script>
-$(function(){
-    var h = $('html').height();
-    // 親におくる。第2引数は親のドメインを指定
-    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
-});
-</script>
 <title>TimelineJS Embed</title>
 <meta charset="utf-8">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,6 +25,13 @@ html, body {
 </head>
 </html>
 <body>
+＜script>
+$(function(){
+    var h = $('html').height();
+    // 親におくる。第2引数は親のドメインを指定
+    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
+});
+</script>
 <!-- 1 -->
 <link title="timeline-styles" rel="stylesheet" href="https://mibuki.github.io/timeline3/css/timeline.css">
 <!-- 2 -->
