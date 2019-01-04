@@ -7,7 +7,13 @@
 <meta name="apple-touch-fullscreen" content="yes">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <base target="_blank">
-
+<script>
+$(function(){
+    var h = $('html').height();
+    // 親におくる。第2引数は親のドメインを指定
+    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
+});
+</script>
 <!-- Style-->
 <style>
 html, body {
@@ -25,13 +31,7 @@ html, body {
 </head>
 </html>
 <body>
-＜script>
-$(function(){
-    var h = $('html').height();
-    // 親におくる。第2引数は親のドメインを指定
-    parent.postMessage(h, 'https://mibuki.github.io/timeline3/embed/');
-});
-</script>
+
 <!-- 1 -->
 <link title="timeline-styles" rel="stylesheet" href="https://mibuki.github.io/timeline3/css/timeline.css">
 <!-- 2 -->
